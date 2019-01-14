@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header {
+  background-image: url(../img/header__bg.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: auto 800px;
+  height: 800px;
+}
+.header__wrapper {
+  max-width: 675px;
+  min-width: 330px;
+  margin: 0 auto;
+  text-align: center;
+}
+.header__logo {
+  margin-top: 68px;
+  margin-bottom: 78px;
+}
+.header__title {
+  font-size: 49px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 62px;
+  margin-bottom: 63px;
+}
+.header__bold {
+  font-weight: 700;
+}
+.header__zip {
+  margin: 0 auto;
+  width: 334px;
+  height: 358px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 8px 1px #7d7d7d;
+          box-shadow: 0px 0px 8px 1px #7d7d7d;
+}
+.header__input {
+  padding: 11px 0 9px 15px;
+  width: 264px;
+  height: 36px;
+  margin-top: 31px;
+  margin-bottom: 24px;
+  font-size: 15px;
+  color: #b4adad;
+  border: 1px solid #e8e8e8;
+}
+.header__text {
+  color: #938e8e;
+  margin: 26px auto;
+}
+.header__btn {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 31px;
+  padding: 12px 38px;
+  background-color: #227dd3;
+}
+
+.boxes {
+  margin-top: 230px;
+  margin-bottom: 110px;
+}
+.boxes__wrapper {
+  margin: 0 auto;
+  max-width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.boxes__discriptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.documents, .photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.documents__img, .photos__img {
+  margin-right: 29px;
+  width: 95px;
+  height: 116px;
+}
+.documents__title, .photos__title {
+  font-weight: 600;
+  font-size: 27px;
+}
+.documents__text, .photos__text {
+  font-size: 14px;
+  color: #4f4e4e;
+  line-height: 1.8;
+}
+
+.documents {
+  margin-right: 70px;
+}
+
+.content {
+  width: 100%;
+  height: 1405px;
+  background: url(../img/content__bg.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.contentMobile {
+  max-width: 648px;
+  margin: 0 auto;
+}
+.contentMobile__title {
+  padding-top: 275px;
+  font-size: 39px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+.contentMobile__text {
+  margin-top: 36px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.5;
+}
+.contentComp {
+  max-width: 870px;
+  margin: 0 auto;
+  padding-left: 340px;
+}
+.contentComp__title {
+  padding-top: 320px;
+  font-size: 39px;
+  font-weight: 600;
+  color: #fff;
+  text-align: left;
+}
+.contentComp__text {
+  margin-top: 36px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.map {
+  width: 1376px;
+  margin: 0 auto;
+}
+
+.map__google {
+  width: 100%;
+}
+
+.footer {
+  max-width: 1376px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #43a06d;
+  color: #fff;
+  text-align: center;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-size: 14px;
+}
+
+@media (min-width: 1290px) {
+  .header {
+    background-size: 100%;
+    background-position: center center;
+  }
+}
+@media (max-width: 890px) {
+  .content {
+    height: 900px;
+    background: url(../img/contentMobile__bg.png);
+    text-align: center;
+  }
+  .contentComp {
+    padding-left: 0px;
+    max-width: 648px;
+  }
+  .contentComp__title {
+    text-align: center;
+    padding-top: 100px;
+  }
+  .contentMobile__title {
+    padding-top: 60px;
+  }
+
+  .boxes__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 600px;
+  }
+
+  .photos {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 675px) {
+  .boxes {
+    margin-top: 260px;
+  }
+}
+@media (max-width: 490px) {
+  .boxes {
+    margin-top: 360px;
+  }
+
+  .contentComp__title {
+    padding-top: 60px;
+  }
+}

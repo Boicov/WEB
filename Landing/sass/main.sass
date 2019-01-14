@@ -1,0 +1,175 @@
+*
+	margin: 0
+	padding: 0
+body
+	font-family: 'Open Sans', sans-serif
+li
+	list-style: none
+a
+	text-decoration: none
+	color: #fff
+
+.header
+	background-image: url(../img/header__bg.png)  
+	background-position: top center
+	background-repeat: no-repeat
+	background-size: auto 800px
+	height: 800px
+	&__wrapper
+		max-width: 675px
+		min-width: 330px
+		margin: 0 auto 
+		text-align: center
+	&__logo
+		margin-top: 68px
+		margin-bottom: 78px
+	&__title
+		font-size: 49px
+		color: #fff
+		font-weight: 400
+		text-transform: uppercase
+		line-height: 62px
+		margin-bottom: 63px
+	&__bold
+		font-weight: 700
+	&__zip
+		margin: 0 auto
+		width: 334px
+		height: 358px
+		background-color: #fff
+		box-shadow: 0px 0px 8px 1px rgba(125,125,125,1)
+	&__input
+		padding: 11px 0 9px 15px
+		width: 264px
+		height: 36px
+		margin-top: 31px
+		margin-bottom: 24px
+		font-size: 15px
+		color: #b4adad
+		border: 1px solid #e8e8e8
+	&__text
+		color: #938e8e
+		margin: 26px auto
+	&__btn
+		text-transform: uppercase
+		color: #fff
+		font-size: 31px
+		padding: 12px 38px
+		background-color: #227dd3
+.boxes
+	margin-top: 230px
+	margin-bottom: 110px
+	&__wrapper
+		margin: 0 auto
+		max-width: 900px
+		display: flex
+		justify-content: space-between
+	&__discriptions
+		display: flex
+		flex-direction: column
+.documents, .photos
+	display: flex
+	&__img
+		margin-right: 29px
+		width: 95px
+		height: 116px
+	&__title
+		font-weight: 600
+		font-size: 27px
+	&__text
+		font-size: 14px
+		color: rgba(79, 78, 78, 255)
+		line-height: 1.8
+.documents
+	margin-right: 70px
+
+.content
+	width: 100%
+	height: 1405px
+	background: url(../img/content__bg.png)
+	background-position: top center
+	background-repeat: no-repeat
+	&Mobile
+		max-width: 648px
+		margin: 0 auto
+		&__title
+			padding-top: 275px
+			font-size: 39px
+			font-weight: 600
+			color: #fff
+			text-align: center
+		&__text
+			margin-top: 36px
+			font-size: 14px
+			color: #fff
+			line-height: 1.5
+	&Comp
+		max-width: 870px
+		margin: 0 auto
+		padding-left: 340px
+		&__title
+			padding-top: 320px
+			font-size: 39px
+			font-weight: 600
+			color: #fff
+			text-align: left
+		&__text
+			margin-top: 36px
+			font-size: 14px
+			color: #fff
+			line-height: 1.5
+
+.map
+	width: 1376px
+	margin: 0 auto
+.map__google
+	width: 100%
+
+.footer
+	max-width: 1376px
+	width: 100%
+	margin: 0 auto
+	background-color: #43a06d
+	color: #fff
+	text-align: center
+	padding-top: 21px 
+	padding-bottom: 21px 
+	font-size: 14px
+
+
+@media (min-width: 1290px)
+	.header
+		background-size: 100% 
+		background-position: center center
+
+@media (max-width: 890px)
+	.content
+		height: 900px
+		background: url(../img/contentMobile__bg.png)
+		text-align: center
+		&Comp
+			padding-left: 0px
+			max-width: 648px
+			&__title
+				text-align: center
+				padding-top: 100px
+		&Mobile
+			&__title
+				padding-top: 60px
+	.boxes__wrapper
+		flex-direction: column
+		max-width: 600px
+	.photos
+		margin-top: 50px
+
+@media (max-width: 675px)	
+	.boxes
+		margin-top: 260px	
+
+@media (max-width: 490px)	
+	.boxes
+		margin-top: 360px	
+	.content
+		&Comp
+			&__title
+				padding-top: 60px
