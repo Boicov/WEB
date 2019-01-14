@@ -1,0 +1,277 @@
+*
+	margin: 0
+	padding: 0
+
+body
+	font-family: 'Open Sans', sans-serif
+li
+	list-style: none
+a
+	text-decoration: none
+	color: #fff
+	
+.header
+	background-color: #f6f2f2
+	padding-bottom: 120px
+	&__nav
+		height: 90px
+		background-color: #313030
+		color: #fff
+		text-transform: uppercase
+		display: flex
+		justify-content: center
+		align-items: center
+		font-size: 14px
+		font-weight: 700
+		margin-bottom: 90px
+	&__menu
+		display: flex
+	&__link
+		display: inline-block
+		padding: 35px 30px
+		&:hover
+			background-color: red
+	&__title
+		font-size: 60px
+		font-weight: 800
+		text-transform: uppercase
+		margin-bottom: 20px
+	&__text
+		font-size: 14px
+		display: inline-block
+		max-width: 512px
+		line-height: 2
+		margin-bottom: 50px
+	&__btn
+		background-color: red
+	&__video
+		box-shadow: 0px -4px 33px -1px rgba(0,0,0,0.75)
+.btn
+	padding: 15px 60px
+	border: 2px solid rgba(255, 45, 45, 255)
+	font-size: 18px
+	line-height: 34px
+	font-weight: bold
+	border-radius: 4px
+	display: inline-block
+	&__services
+		color: rgba(255, 45, 45, 255)
+		margin-bottom: 30px
+		margin-bottom: 130px
+		
+
+.services
+	&__title
+		font-size: 42px
+		color: rgba(0, 0, 0, 0.8)
+		text-transform: uppercase
+		line-height: 55px
+		font-weight: 700
+		margin-bottom: 50px
+		margin-right: 120px
+
+	&__text
+		font-size: 16px
+		line-height: 28px
+		margin-bottom: 58px
+		display: block
+		margin-right: 120px
+	&__line
+		border-bottom: 2px solid #ececec
+	&Item
+		&__img
+			margin-bottom: 30px
+		&__title
+			font-size: 24px
+			color: rgba(0, 0, 0, 0.7)
+			margin-bottom: 17px
+		&__text
+			display: block
+			margin-bottom: 50px
+.service
+	padding-top: 110px
+
+
+.ourTeam
+	margin-top: 110px
+	margin-bottom: 110px
+	&__title
+		font-size: 42px
+		color: rgba(0, 0, 0, 0.8)
+		text-transform: uppercase
+		margin-bottom: 10px
+		color: rgba(0, 0, 0, 0.8)
+	&__text
+		display: inline-block
+		max-width: 440px
+		line-height: 2
+		color: rgba(0, 0, 0, 0.7)
+		margin-bottom: 30px
+	&__line
+		width: 130px
+		height: 3px
+		background-color: #ff2d2d
+		margin-bottom: 65px
+	&__about
+		display: flex	
+		justify-content: space-between
+	&__personBigImg
+		margin-right: 60px
+		display: none
+		width: 290px
+		height: 400px
+	&__personName
+		font-size: 30px
+		font-weight: 600
+		margin-bottom: 20px
+		text-transform: uppercase
+		color: rgba(0, 0, 0, 0.8)
+	&__personText
+		font-size: 16px
+		color: rgba(0, 0, 0, 0.7)
+		margin-bottom: 20px
+	&__social
+		font-size: 18px
+		font-style: italic
+		color: rgba(0, 0, 0, 0.8)
+	&__rightSide
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+	&__social
+		color: rgba(0, 0, 0, 0.7)
+		margin-right: 25px
+	&__personsImg
+		display: flex
+		justify-content: space-between
+	&__personImg
+		background: url(../img/ourTeam/person.png) 
+		width: 170px
+		height: 200px
+		margin-right: 10px
+		display: flex
+		align-items: flex-end
+		overflow: hidden
+		&:hover
+			.ourTeam__imgDescription
+				margin-bottom: 0
+	&__imgDescription
+		margin-bottom: 5px
+		text-transform: uppercase
+		font-size: 18px
+		padding-top: 10px
+		padding-bottom: 10px
+		background-color: #7a786e
+		width: 100%
+		text-align: center
+		color: #fff
+		margin-bottom: -50px
+		transition: all 0.8s					
+	&__person
+		display: none
+.aboutMobile
+	display: none
+	&__img
+		width: 180px
+		height: 200px
+	&__item
+		text-align: center
+		margin-top: 90px
+.show-block
+	display: block
+
+.subscribe
+	padding-top: 140px
+	padding-bottom: 140px 
+	text-align: center
+	background-color: #f5f0dd
+	&__text
+		color: #fff
+		font-size: 42px
+		margin-bottom: 60px
+	&__input
+		padding: 33px 0 33px 33px
+		min-width: 520px
+		font-size: 16px
+		border: none
+		color: rgba(44, 44, 44, 0.7)
+		margin-right: 22px
+	&__btn
+		margin-top: 50px
+		background-color: #ff2d2d
+		color: #fff
+		text-transform: uppercase
+		padding: 23px 60px
+		font-size: 19px
+
+.footer
+	background-color: #313030
+	padding-top: 47px
+	padding-bottom: 31px
+	&__copyright
+		font-size: 16px
+		color: rgba(184, 184, 184, 255)
+	&__icon
+		display: inline-block
+		width: 33px
+		height: 33px
+		overflow: hidden
+		margin-left: 18px
+		&In
+			margin-left: -51px
+		&Gg
+			margin-left: -101px
+		&Fb 
+			margin-left: -152px
+		&:hover
+			border-radius: 50%
+			box-shadow: 0px 0px 15px 3px #ff2d2d
+
+@media (max-width: 1185px)
+	.header
+		&__title
+			font-size: 50px
+	.aboutMobile
+		display: block
+	.ourTeam
+		&__about
+			display: none
+
+@media (max-width: 975px)
+	body
+		text-align: center
+	.header
+		&__title
+			font-size: 40px
+		&__video
+			display: none
+	.services
+		&__title
+			font-size: 36px
+			margin-right: 0
+		&__text
+			margin-right: 0
+	.ourTeam
+		&__line
+			margin: 0 auto
+	.footer
+		&__icon
+			margin-left: 0px
+	.subscribe
+		&__input
+			min-width: 100%
+
+@media (max-width: 530px)
+	.header
+		&__nav
+			height: auto
+			font-size: 12px
+		&__link
+			padding-left: 10px
+			padding-right: 10px
+	.footer
+		&__social
+			display: flex
+		&__icon
+			margin-left: 10px
+			margin-right: 10px
